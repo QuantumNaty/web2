@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+     <!--====== Title ======-->
+     <title> Super Minds AI </title>
+     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+     
+     <meta name="description" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!--====== Favicon Icon ======-->
+     <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/svg">
+         
+     <!--====== Animate CSS ======-->
+     <link rel="stylesheet" href="assets/css/animate.css">
+         
+     <!--====== Glide CSS ======-->
+     <link rel="stylesheet" href="assets/css/tiny-slider.css">
+         
+     <!--====== Line Icons CSS ======-->
+     <link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
+         
+     <!--====== Bootstrap CSS ======-->
+     <link rel="stylesheet" href="assets/css/bootstrap-5.0.0-beta1.min.css">
+     
+     <!--====== Default CSS ======-->
+     <link rel="stylesheet" href="assets/css/default.css">
+     
+     <!--====== Style CSS ======-->
+     <link rel="stylesheet" href="assets/css/style.css">
+    <title>Super Minds AI</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Sección 1: Video de fondo con desenfoque */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2; /* Envía el video al fondo */
+        }
+
+        /* Capa de desenfoque */
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3); /* Oscurece ligeramente */
+            backdrop-filter: blur(10px); /* Aplica el desenfoque */
+            z-index: -1; /* Mantiene el blur detrás del contenido */
+        }
+
+        /* Contenedor del logo, título y subtítulo */
+        .hero .content {
+            position: relative;
+            z-index: 2; /* Asegura que el texto quede encima del blur */
+        }
+
+        .hero img {
+            width: 150px; /* Ajusta el tamaño del logo */
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Sección de introducción */
+        .intro, .extra {
+            padding: 100px 20px;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        .intro {
+            background-color: #f4f4f4;
+        }
+
+        .extra {
+            background-color: #ddd;
+        }
+
+        /* Sección de dos columnas */
+        .info-section {
+            background-color: #001F3F; /* Azul marino */
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+            gap: 20px;
+        }
+
+        .info-text {
+            flex: 1;
+            font-size: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .info-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .info-image img {
+            width: 80%;
+            max-width: 500px;
+            border-radius: 10px; /* Esquinas redondeadas */
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .info-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .info-image img {
+                width: 100%;
+            }
+        }
+        
+        
+    </style>
+</head>
+<body>
+
+    <!-- Sección 1: Video de fondo con blur -->
+    <section class="hero">
+        <video autoplay muted loop>
+            <source src="assets/images/video2.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
+        <div class="content">
+            <img src="assets/images/logo.svg" alt="Super Minds AI Logo"> <!-- Agrega tu logo -->
+            <h1>Super Minds AI</h1>
+            <p>"Acelerando el aprendizaje desde una observacion excepcionalmente maravillosa"</p>
+        </div>
+    </section>
+
+  
+        
+   <!--====== VIDEO VSL ======-->
+
+   <section id="team" class="team_area pt-120 pb-130">
+    <div class="container">
+        <div class="row justify-content-center">
+        </div> <!-- row -->
+
+
+
+        <div class="row justify-content-center team_active">
+            <video width="1000" controls>
+                <source src="https://res.cloudinary.com/videoapi-demo/video/upload/v1/samples/roadtrip_preview_xle9vy?_a=DATAdtAAZAA0" type="video/mp4" >
+            </video>
+            <br>
+            <br>
+            
+        </div>
+        
+    </div> <!-- container -->
+</section>
+
+
+  
+
+
+<section class="info-section"  style="background-color: white" >
+    <div class="row justify-content-center">
+
+      <div class="col-lg-1">
+
+      </div>
+
+      <div class="col-lg-10">
+    
+    <div class="info-text text-align: justify;" style="background-color: white;" >
+        
+        <h3 style="font-size: 40px;"> MUCHAS PERSONAS QUIEREN APRENDER COSAS NUEVAS. </h3>
+        <h3 style="font-size: 40px;"> NO SABEN QUE LO QUE LOS FRENAN ES UN BARRERA INVISIBLE EN SU <span style="font-style: italic;"> MENTE </span> </h3>
+        <h5>  ¿ Cansado de querer aprender algo y sentir que no tienes tiempo? </h5>.
+        <h5>  ¿ Crees que hay cosas que serian dificiles ? </h5>
+        <h5>  ¿ Procastinas ? ¿te abruma el no saber cómo hacer el siguiente paso. ¿No sabes como cumplir tus metas? </h5>
+        <h5>  ¿ Empiezas hacer algo y no lo terminas? </h5>
+        <h5>  ¿ Sientes algo te atacas? Eso que pasa son patrones inconscientes creados por memeorias en tu mente subconsiente, que te hacen sentir asi. </h5>
+        <h5> Por eso he creado SUper Minds AI </h5>
+
+        Una informacion para ACELERAR, OPTIMIZAR Y ELEVAR tu aprendizaje de FORMA SENCILLA, DIVERTIDA. ES APRENDER JUGANDO. 
+        
+        Te brindamos…
+
+        - Mentores 1-a-1
+        - Sesiones semanales con especialistas de ventas, tráfico, funnels, etc.
+        - Contenido on-demand
+        - Recursos
+        - Plantillas
+        - Templates copia y pega
+        - Un Setter
+        - Un Closer
+        - Y demás.
+
+      </div>
+      <div class="col-lg-1">
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<br>
+<br>
+
+
+    <section class="info-section">
+        <div class="info-text" style="margin: 3cm 5cm 4cm 5cm ;" >
+           
+            <h1 style="color: #ddd;text-align: justify;font-family: AutoBiography"> ¡Hola! Yo soy Quantum Naty</h1>
+            <br>
+            <p style="font-size: xx-large; font-family: Poppins; color: #ddd; font-style: italic;line-height: 1.5em;text-align: justify">
+              
+              Mi nombre es Natacha Quintero.
+              Si pudiera resumirte en una línea, lo que hago sería:
+              "investigadora universal de los misterios del universo y las formas de expresión del ser".
+            
+              <br>
+
+              Me apasiona la investigación y las formas de comunicación que son infinitas. Sin saberlo, 
+              llevo toda mi vida atravesando distintas formas de expresión del ser en diferentes canales.
+              Hoy quiero compartirlo contigo.
+            </p>
+
+              <br>
+            <a href="sobremi.html" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s" style="border-radius: 25px">¡Quiero saber mas!</a> 
+        </div>
+        <div class="info-image">
+         <!--    <div class="card">  -->
+            <img src="assets/images/you2.png" alt="Innovación y tecnología" width="600" height="500" >
+         <!--   </div> -->
+        </div>
+
+
+    </section>
+
+    <br>
+
+
+    <div class="cont">
+        <h2 class="hero_title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s"> Una  &nbsp <span class="cuantico__" color="black"> mente </span> excepcionalmente &nbsp <span class="cuantico__" color="black"> maravillosa </span> </h2> </br> </h2>
+    </div>
+
+
+    <br>
+
+      <div class="cont">
+        <h2 class="hero_title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s"> ¿Qué hacemos? </h2> </br> </h2>
+      </div>
+
+    <br>
+    
+<div class="section most-played">
+    <div class="container">
+      <div class="row">
+       
+        <div class="col">
+         
+        </div>
+        <div class="col">
+          <div class="item">
+          <div class="card">   
+              <a href="product-details.html"><img src="assets/images/9_1.svg" alt="" style="border-radius: 25px;"></a>
+            </div> 
+            <br>
+            <div class="down-content" align="center">
+                <!--  <span class="category">Adventura</span> -->
+                <h4>  Neurofísica </h4>
+                <a class="btn btn-primary" href="product-details.html" style="border-radius: 25px; background-color: black" >¡Quiero saber más!</a>
+            </div>
+            <br>
+          </div>
+        </div>
+        <div class="col">
+          <div class="item">
+            <div class="card">
+              <a href="product-details.html"><img src="assets/images/8_1.svg" alt="" style="border-radius: 25px;"></a>
+            </div>
+            <br>
+            <div class="down-content" align="center">
+              <!--  <span class="category">Adventura</span> -->
+                <h4> Epigenética </h4>
+                <a class="btn btn-primary" style="border-radius: 25px; background-color: black" href="product-details.html">¡Quiero saber más!</a>
+            </div>
+            <br>
+          </div>
+        </div>
+        <div class="col">
+         
+        </div>
+ 
+        
+      </div>
+    </div>
+  </div>
+
+  <br>
+      
+      <div class="cont">
+        <h2 class="hero_title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s"> ¿Qué te podemos enseñar? </h2> 
+      </div>
+
+
+      <br>
+      <br>
+<div class="section most-played">
+  <div class="container">
+    <div class="row">
+     
+      <div class="col">
+       
+      </div>
+      
+      <div class="col">
+        <div class="item">
+        <div class="card">   
+            <a href="programas.html"><img src="assets/images/1lc.png" alt="" style="border-radius: 25px;"></a>
+          </div> 
+          <br>
+          <div class="down-content" align="center">
+              <!--  <span class="category">Adventura</span> -->
+              <h4>  Programas de aprendizaje </h4>
+              
+              <a class="btn btn-primary" href="programas.html" style="border-radius: 25px; background-color: black" >¡Quiero saber más!</a>
+          </div>
+          <br>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="item">
+          <div class="card">
+            <a href="https://t.me/natyquantum"><img src="assets/images/2lc.png" alt="" style="border-radius: 25px;"></a>
+          </div>
+          <br>
+        
+          <div class="down-content" align="center">
+            <!--  <span class="category">Adventura</span> -->
+              <h4> Clases Particulares</h4>
+              <a class="btn btn-primary" style="border-radius: 25px; background-color: black" href="https://t.me/natyquantum">¡Quiero saber más!</a>
+          </div>
+          <br>
+        </div>
+      </div>
+      <div class="col">
+        <div class="item">
+          <div class="card">
+            <a href="terapias.html"><img src="assets/images/terapias.svg" alt="" style="border-radius: 25px;"></a>
+          </div>
+          <br>
+        
+          <div class="down-content" align="center">
+            <!--  <span class="category">Adventura</span> -->
+              <h4> Terapias Subconsiente 1-1</h4>
+              <a class="btn btn-primary" style="border-radius: 25px; background-color: black" href="terapias.html"">¡Quiero saber más!</a>
+          </div>
+          <br>
+        </div>
+      </div>
+      <div class="col">
+       
+      </div>
+ 
+     
+     
+      
+    </div>
+  </div>
+</div>
+
+          
+
+
+
+
+
+  <br>
+
+   <!--====== FOOTER PART START ======-->
+
+   <footer id="footer" class="footer_area">
+    <div class="container">
+        <div class="footer_wrapper text-center d-lg-flex align-items-center justify-content-between">
+            <p class="credit" style="color: black;"> Designed and Developed by QuantumNaty </p>
+            <div class="footer_social pt-15">
+                <ul>
+                    <li><a href="supermindsai"  style="color: black;"><i class="lni lni-instagram-original"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/natacha-quintero/" style="color: black;"><i class="lni lni-linkedin-original"></i></a></li>
+                </ul>
+            </div> <!-- footer social -->
+        </div> <!-- footer wrapper -->
+    </div> <!-- container -->
+</footer>
+
+<!--====== FOOTER PART ENDS ======-->
+
+<!--====== BACK TOP TOP PART START ======-->
+
+<a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
+
+<!--====== BACK TOP TOP PART ENDS ======-->
+
+<!--====== Bootstrap js ======-->
+<script src="assets/js/bootstrap.bundle-5.0.0-beta1.min.js"></script>
+
+<!--====== glide js ======-->
+<script src="assets/js/tiny-slider.js"></script>
+
+<!--====== wow js ======-->
+<script src="assets/js/wow.min.js"></script>
+
+<!--====== Main js ======-->
+<script src="assets/js/main.js"></script>
+
+
+      
+</body>
+</html>
